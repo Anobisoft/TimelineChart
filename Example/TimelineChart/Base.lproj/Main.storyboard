@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YsY-wh-frm">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph Source-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="TCMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpI-Dm-Rtt" customClass="TCView">
+                                <rect key="frame" x="16" y="72" width="288" height="288"/>
+                                <color key="backgroundColor" red="0.55912885273972601" green="0.75775500263698625" blue="1" alpha="0.2405019264054794" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="0.7989886558219178" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bpI-Dm-Rtt" secondAttribute="height" multiplier="1:1" id="2n9-WX-GWQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                                        <color key="value" red="0.107666015625" green="0.29814995659722221" blue="0.50458441840277779" alpha="0.80313570209041096" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientTopColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="0.70039597602739723" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pointRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientBottomColor">
+                                        <color key="value" red="0.1076660156" green="0.29814995659999999" blue="0.50458441840000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="graphSource" destination="whP-gf-Uak" id="SA5-3N-IZK"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-su-g0m" customClass="ASGradientView">
+                                <rect key="frame" x="0.0" y="72" width="80" height="288"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="vhE-XY-FRd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                        <point key="value" x="1" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                        <point key="value" x="0.20000000000000001" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVh-al-1n8" customClass="TCScaleView">
+                                <rect key="frame" x="16" y="72" width="288" height="288"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="scale">
+                                        <rect key="value" x="1" y="1" width="0.0" height="400"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="midlineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.88816352740000004" green="0.21960784310000001" blue="0.16724636130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="markDistance">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bpI-Dm-Rtt" secondAttribute="trailing" constant="16" id="7NB-da-J0s"/>
+                            <constraint firstItem="fVh-al-1n8" firstAttribute="top" secondItem="bpI-Dm-Rtt" secondAttribute="top" id="BtL-5x-VI1"/>
+                            <constraint firstItem="fVh-al-1n8" firstAttribute="centerY" secondItem="bpI-Dm-Rtt" secondAttribute="centerY" id="Etk-7d-7c4"/>
+                            <constraint firstItem="bpI-Dm-Rtt" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="Tgq-lX-F8k"/>
+                            <constraint firstItem="fbf-su-g0m" firstAttribute="bottom" secondItem="bpI-Dm-Rtt" secondAttribute="bottom" id="YFv-9A-kXg"/>
+                            <constraint firstItem="fbf-su-g0m" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="dIY-ed-4Lf"/>
+                            <constraint firstItem="bpI-Dm-Rtt" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="8" id="eQ6-AM-fk0"/>
+                            <constraint firstItem="fVh-al-1n8" firstAttribute="trailing" secondItem="bpI-Dm-Rtt" secondAttribute="trailing" id="g4i-d1-5pE"/>
+                            <constraint firstItem="fVh-al-1n8" firstAttribute="leading" secondItem="bpI-Dm-Rtt" secondAttribute="leading" id="kWC-04-aSz"/>
+                            <constraint firstItem="fbf-su-g0m" firstAttribute="top" secondItem="bpI-Dm-Rtt" secondAttribute="top" id="og8-fl-jZh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TimelineChart" id="Yxx-5Y-HZy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Eqq-9h-ar2">
+                            <connections>
+                                <action selector="refreshTap:" destination="whP-gf-Uak" id="RWo-Nc-WoF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="graphView" destination="bpI-Dm-Rtt" id="1Nm-8W-m7F"/>
+                        <outlet property="scaleView" destination="fVh-al-1n8" id="LzS-V3-yGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="432"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aFD-7Y-O98">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YsY-wh-frm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LnU-8t-4f5">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="7xy-1S-zQK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZt-VV-0XJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1389.375" y="432.04225352112678"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,15 @@
+
+platform :ios, '9.3'
+
+use_frameworks!
+
+target 'TimelineChart_Example' do
+  pod 'TimelineChart', :path => '../'
+  pod 'AnobiView'
+  
+  target 'TimelineChart_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

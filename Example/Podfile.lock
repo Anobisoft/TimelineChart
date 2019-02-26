@@ -1,0 +1,23 @@
+PODS:
+  - AnobiView (0.3.0)
+  - TimelineChart (0.0.1)
+
+DEPENDENCIES:
+  - AnobiView
+  - TimelineChart (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AnobiView
+
+EXTERNAL SOURCES:
+  TimelineChart:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnobiView: 0f7cc71f05a68c650ae715f49a9c8ddd61abb565
+  TimelineChart: 149225bf5588b898ca68b9363f25f5c79e74104d
+
+PODFILE CHECKSUM: 956611b7b7a02a160360d99288bfd30a7afe417c
+
+COCOAPODS: 1.6.1
