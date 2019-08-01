@@ -3,7 +3,6 @@
 
 [![CI Status](http://img.shields.io/travis/Anobisoft/TimelineChart.svg?style=flat)](https://travis-ci.org/Anobisoft/TimelineChart)
 [![Version](https://img.shields.io/cocoapods/v/TimelineChart.svg?style=flat)](http://cocoapods.org/pods/TimelineChart)
-[![Downloads](https://img.shields.io/cocoapods/dt/TimelineChart.svg)](http://cocoapods.org/pods/TimelineChart)
 [![Platform](https://img.shields.io/cocoapods/p/TimelineChart.svg?style=flat)](http://cocoapods.org/pods/TimelineChart)
 [![Language](https://img.shields.io/github/languages/top/Anobisoft/TimelineChart.svg)](https://github.com/Anobisoft/TimelineChart)
 [![License](https://img.shields.io/cocoapods/l/TimelineChart.svg?style=flat)](http://cocoapods.org/pods/TimelineChart)
